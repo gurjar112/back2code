@@ -1,18 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.back2code</groupId>
-	<artifactId>back2code-api</artifactId>
+	<artifactId>back2code</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>back2code-api</name>
+	<name>back2code</name>
 	<url>http://code.google.com/p/back2code/</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+	</properties>	
 
 	<build>
 		<plugins>
@@ -60,4 +60,8 @@
 			<version>2.4-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+  <modules>
+    <module>back2code-maven-plugin</module>
+    <module>back2code-samples</module>
+  </modules>
 </project>
